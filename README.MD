@@ -1,0 +1,1 @@
+Docker Login Page project entails building a real-time docker based web application featuring login and signup functionalities, crafted using docker, git, Dotnet , Angular, SQL. To ensure seamless deployment and scalability, we’ve leveraged Docker technology to containerize the application. This involved creating distinct images for the frontend and backend components.
