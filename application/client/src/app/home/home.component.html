@@ -1,10 +1,191 @@
-<!-- home.component.html -->
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container">
-    <h1>Welcome to the Home Page</h1>
-    <div class="username">Logged in as: <span>{{ username }}</span></div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Anvesh Muppeda</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+      table {
+          border-collapse: collapse;
+          width: 100%;
+      }
+
+      th, td {
+          text-align: left;
+          padding: 8px;
+      }
+
+      tr:nth-child(even) {
+          background-color: cornflowerblue;
+      }
+  </style>
+  
+</head>
 
 
-    <br><br>    
-    <div class="thankyou"> <p>Thank you from Team Alpha</p></div>
-</div>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="https://yt3.ggpht.com/E7wLZy0DhlSI5Xv9vkC81aLBxnvjM4oOnJBfVteI_mcmM7klFqC0dqOc7TrqbGyIkyFSFgIZTg=s800-c-k-c0x00ffffff-no-rj" alt="photo" class="img-fluid rounded-circle">
+        <h1 ><a href="index.html">Team<br> Alpha</a></h1>
+
+
+        <div class="social-links mt-4 text-center">
+          <div class="row mt-1">
+              <div class="col">
+                <a href="https://github.com/anveshmuppeda" class="github"><i class="bx bxl-github"></i></a>
+                <p style="color: white;">Anvesh</p>
+              </div>
+          </div>
+          <div class="row mt-1">
+              <div class="col">
+                  <a href="https://github.com/saimanasak" class="github"><i class="bx bxl-github"></i></a>
+                  <p style="color: white;">Manasa</p>
+              </div>
+          </div>
+          <div class="row mt-1">
+              <div class="col">
+                <a href="https://github.com/khajjayamteja" class="github"><i class="bx bxl-github"></i></a>
+                <p style="color: white; ">Teja</p>
+              </div>
+          </div>
+          <div class="row mt-1">
+              <div class="col">
+                <a href="https://github.com/Vishwasena-Raidu-Nyaramneni" class="github"><i class="bx bxl-github"></i></a>
+                <p style="color: white; ">Vishwa</p>
+              </div>
+          </div>
+          
+          <div class="row mt-1">
+            <div class="col">
+              <a href="https://github.com/sakethvardhineni" class="github"><i class="bx bxl-github"></i></a>
+              <p style="color: white; ">Saketh</p>     
+            </div>
+        </div>
+
+
+      </div>
+      
+      </div>
+
+      
+    </div>
+  </header><!-- End Header -->
+
+  
+  <main id="main" >
+    <button class="signup-button" style="position: fixed; top: 10px; right: 10px;" (click)="signOut()">Sign Out</button>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container ">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+            <p>Given below are some of my projects that we have implemented over these years.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-t1">Azure Devops</li>
+                  <li data-filter=".filter-t2">Docker login page</li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="row-cols-3  portfolio-container" data-aos="fade-up" >
+
+          <div class="col portfolio-item filter-t1">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/T-1-2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/T-1-2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col portfolio-item filter-t1">
+            <div class="portfolio-wrap" >
+              <img src="assets/img/portfolio/T-1-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/T-1-1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col portfolio-item filter-t2">
+            <div class="portfolio-wrap" >
+              <img src="assets/img/portfolio/T-2-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col portfolio-item filter-t2">
+            <div class="portfolio-wrap" >
+              <img src="assets/img/portfolio/T-2-2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  
+  </main>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
